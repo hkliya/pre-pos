@@ -18,7 +18,11 @@ describe('practice-3-4', () => {
 
   const objectB = {value: ['a', 'd', 'e', 'f']};
 
-  it('统计出A集合中相同的元素的个数，有过有-就把-右边的数字也计算入个数，形成C集合，C集合中的元素要形如{key:"a", count: 3}，然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新C集合', () => {
+  it('统计出A集合中相同的元素的个数，' +
+    '如果有-就把-右边的数字也计算入个数，形成C集合，' +
+    'C集合中的元素要形如{key:"a", count: 3}，' +
+    '然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,' +
+    '把他们的count，满3减1，输出减过之后的新C集合', () => {
 
     const result = createUpdatedCollection(collectionA, objectB);
 
